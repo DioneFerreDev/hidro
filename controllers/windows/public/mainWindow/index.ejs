@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/style.css">
+    <title>mainWindow</title>
+</head>
+
+<body>
+    <div class="container">
+        <label>valor de teste</label>
+        <input id="box" type="text">
+        <button onClick="openModal()">Open</button>
+    </div>
+
+    <script>
+        const { remote, ipcRenderer } = require('electron');
+        
+        ipcRenderer.on('valorTest', (e, value) => {
+            document.querySelector('#box').value = value;
+            
+        })
+
+
+
+        function openModal() {
+            ipcRenderer.send('openModal');
+            // const winChild = new remote.BrowserWindow({
+            //     parent: remote.getCurrentWindow(),
+            //     modal: true
+            // });
+            // winChild.loadFile('../childWindow/index.ejs');
+        }
+    </script>
+</body>
+
+</html>

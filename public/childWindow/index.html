@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/bootStyle.css">
+    <link rel="stylesheet" href="../styles/utilization.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="wrap-main">
+            <div class="form-group">
+                <label>Peça de utilização</label>
+                <input id="pecas" type="text">
+            </div>
+            <div class="flexBetween">
+                <div class="form-group grow">
+                    <label>Vazão</label>
+                    <input id="vazao" type="text">
+                </div>
+                <div class="form-group grow">
+                    <label>Peso relativo</label>
+                    <input id="pesoRelativo" type="text">
+                </div>
+                <div class="form-group grow">
+                    <label>Pressão mínima</label>
+                    <input id="pressaoMinima" type="text">
+                </div>
+            </div>
+            <!--panel-value-->
+            <div id="wrap-table" class="wrap-table"></div>
+            <!--wrap-table-->
+            <button id="add" class="btn-positive">Confirmar</button>
+        </div>
+        <!--wrap-main-->
+    </div>
+</body>
+<script src="http://localhost:35729/livereload.js"></script>
+<script src="../scripts/utilization.js"></script>
+
+</html>

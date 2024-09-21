@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/bootStyle.css">
+    <link rel="stylesheet" href="../styles/ProjectInformation.css">
+    <title>Document</title>
+    <style>
+        .container {
+            width: 100%;
+        }
+
+        .wrap-main {
+           width:100%;            
+            margin: 10px auto;
+            text-align: center;
+        }
+
+        .wrap-table {
+            width: 100%;
+            height: 100%;
+            padding-bottom: 30px;
+            border: 1px solid black;
+            background-color: white;
+            margin:20px auto
+        }
+        table{
+        width:100%;
+        font-size:12px;
+        text-align:center;
+        border-collapse:collapse;        
+        }
+        table td{
+            border:1px solid black;
+            padding:3px;
+            background-color:white;
+        }
+        table td:nth-of-type(1){
+            border-left:none;
+        }
+        label {            
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="wrap-main">
+            <label>Trechos do Projeto</label>
+            <div id="wrap-table-pecas" class="wrap-table">
+                <table>
+                    <tr>
+                        <td>Trecho1</td>
+                        <td>Trecho2</td>
+                        <td>P.Acumulado</td>
+                        <td>Vazão</td>
+                        <td>Velocidade</td>
+                        <td>Comprimento</td>
+                        <td>Comp.Equivalente</td>
+                        <td>Perda.Pressão</td>
+                        <td>Dia.Interno</td>
+                        <td>Dia.Externo</td>
+                        <td>Press.Mínima</td>
+                        <td>Comp.Virtual</td>
+                        <td>Alt.Geométrica</td>
+                        <td>Press.Trechos</td>
+                        <td>Status</td>
+                        <td>Água</td>
+                    </tr>
+                    <% for (trecho of trechos){ %>
+                        <tr>
+                            <td><%= trecho.trecho1 %></td>
+                            <td><%= trecho.trecho2 %></td>
+                            <td><%= trecho.peso %></td>
+                            <td><%= trecho.vazao %></td>
+                            <td><%= trecho.velocidade %></td>
+                            <td><%= trecho.comprimento %></td>
+                            <td><%= trecho.comprimentoEquivalente %></td>
+                            <td><%= trecho.perdaPressao %></td>
+                            <td><%= trecho.dInterno %></td>
+                            <td><%= trecho.dExterno %></td>
+                            <td><%= trecho.pressaoMinima %></td>
+                            <td><%= trecho.comprimentoVirtual %></td>
+                            <td><%= trecho.alturaGeometrica %></td>
+                            <td><%= trecho.pressaoTrechos %></td>
+                            <td><%= trecho.status %></td>
+                            <td><%= trecho.agua %></td>
+                        </tr>
+                    <% } %>        
+
+                </table>                
+                <!--Aqui vai a table-->
+            </div>
+            <!--wrap-table-pecas-->           
+
+            
+        </div>
+        <!--wrap-main-->
+    </div>
+    <!--container-->      
+</body>
+
+</html>

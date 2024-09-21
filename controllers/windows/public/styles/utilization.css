@@ -1,0 +1,25 @@
+html,body{overflow:hidden;}
+.wrap-main{
+    position:relative;
+    max-width:750px;
+    margin:0px auto;
+}
+.wrap-table{
+    width:100%;
+    max-height:480px;
+}
+.flexBetween{
+    margin:0px auto;
+}
+input[type="text"]{
+    padding:4px 4px 4px 18px !important;
+}
+table td{
+    padding:4px;
+}
+button{
+    position:absolute;
+    margin-top:15px;
+    right:0;
+    display:none;
+}

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/bootStyle.css">
+    <link rel="stylesheet" href="../styles/ProjectInformation.css">
+    <title>Document</title>
+    <style>
+        .container {
+            width: 100%;
+        }
+
+        .wrap-main {
+            width: 100%;
+            max-width: 1200px;
+            margin: 10px auto;
+            text-align: center;
+        }
+
+        .wrap-table {
+            width: 100%;
+            height: 100%;
+            padding-bottom: 30px;
+            border: 1px solid black;
+            background-color: white;
+            margin:20px auto
+        }
+        table{
+        width:100%;
+        font-size:12px;
+        text-align:center;
+        border-collapse:collapse;
+        }
+        table td{
+            border:1px solid black;
+            padding:3px;
+            background-color:white;
+        }
+        table td:nth-of-type(1){
+            border-left:none;
+        }
+        label {            
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="wrap-main">
+            <label>Peças do Projeto</label>
+            <div id="wrap-table-pecas" class="wrap-table">
+                <table>
+                    <tr>
+                        <td>Peça</td>
+                        <td>Quantidade</td>
+                    </tr>
+                    <% for (obj of pecas ){ %>
+                    <tr>
+                        <td><%= obj.peca %></td>
+                        <td><%= obj.quantidade %></td>
+                    </tr>
+                    <% } %>        
+                </table>                
+                <!--Aqui vai a table-->
+            </div>
+            <!--wrap-table-pecas-->
+
+            <label>Conexões do Projeto</label>
+            <div id="wrap-table-conexoes" class="wrap-table">
+                <table>
+                    <tr>
+                        <td>Conexão</td>
+                        <td>Diâmetro (mm)</td>
+                        <td>Quantidade</td>
+                    </tr>
+                    <% for (conex of conexoes ){ %>
+                        <tr>
+                            <td><%= conex.conexao %></td>
+                            <td><%= conex.diametro %></td>
+                            <td><%= conex.quantidade %></td>
+                        </tr>
+                        <% } %>        
+                </table>  
+                <!--Aqui vai a table-->
+            </div>
+            <!--wrap-table-pecas-->
+
+            <label>Tubulações do Projeto</label>
+            <div id="wrap-table-plubing" class="wrap-table">
+                <table>
+                    <tr>
+                        <td>Diâmetro (mm)</td>
+                        <td>Comprimento</td>
+                    </tr>
+                    <% for (tub of tubulacoes ){ %>
+                    <tr>
+                        <td><%= tub.plub %></td>
+                        <td><%= tub.comprimento %></td>
+                    </tr>
+                    <% } %>        
+                </table>  
+                <!--Aqui vai a table-->
+            </div>
+            <!--wrap-table-pecas-->
+        </div>
+        <!--wrap-main-->
+    </div>
+    <!--container-->
+    <div class="final-panel">        
+    </div>   
+</body>
+
+</html>

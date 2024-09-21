@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/bootStyle.css">
+    <link rel="stylesheet" href="../styles/mainStyle.css">
+    <title>mainWindow</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="wrap-main">
+            <div class="panelValue">
+                <div class="form-group">
+                    <!-- <label>Trechos</label> -->
+                    <div class="wrap">
+                        <div class="flexBetween">
+                            <div class="wrap">
+                                <label>Montante</label>
+                                <div class="selectTrecho"></div>
+                            </div>
+                            <div class="wrap">    
+                                <label>Jusante</label>
+                                <div class="selectTrecho"></div>    
+                            </div>    
+                        </div>    
+                    </div>    
+                </div>
+                <div class="form-group">
+                    <label>Tipo de agua</label>
+                    <select id="agua" class="edit-blocked">
+                        <option>Água Fria</option>
+                        <option>Água Quente</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Ponto de Utilização</label>
+                    <div class="wrap">
+                        <button id="utilization" class="btn-classic edit-blocked">Sim</button>
+                        <button id="nUtilization" class="btn-classic edit-blocked">Não</button>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label>Altura Geométrica</label>
+                    <input class="needed" id="aGeometrica" type="text">
+                </div>
+                <div class="form-group">
+                    <label>Comprimento</label>
+                    <input id="comprimentoReal" class="needed" type="text">
+                </div>
+                <div class="form-group">
+                    <label>Comprimento equivalente</label>
+                    <div class="flexBetween">
+                        <button id="comprimento" class="btn-classic edit-blocked">search</button>
+                        <input class="needed" id="compTotal" type="text" disabled>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label>Peso acumulado</label>
+                    <input class="needed" id="peso" type="text" disabled>
+                </div>
+                <div class="form-group">
+                    <!-- <label>Diâmetro</label> -->
+                    <div class="flexBetween">
+                        <div class="wrap">
+                            <label>Diametro calculado</label>
+                            <div class="form-group">
+                                <input class="needed" id="diaCalculado" type="text" disabled>
+                            </div>
+                        </div>
+                        <div class="wrap">
+                            <label>Int. escolhido</label>
+                            <div class="form-group">
+                                <div id="plubInt">
+                                    <!-- <select id="diaInterno">
+                                        <option>20</option>
+                                    </select> -->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="wrap">
+                            <label>Ext. escolhido</label>
+                            <div class="form-group">
+                                <div id="plubExt">
+                                    <!-- <select>
+                                        <option>20</option>
+                                    </select> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>        
+                </div>
+                <div class="form-group">
+                    <label>Velocidade</label>
+                    <input class="needed" id="speed" type="text" disabled>
+                </div>
+                <div class="form-group">
+                    <label>Vazão</label>
+                    <input class="needed" id="vazao" type="text" disabled>
+                </div>
+                <div class="form-group">
+                    <label>Pressão Mínima</label>
+                    <input class="needed" type="text" id="pressaoMinima" disabled>
+                </div>
+                <div class="form-group">
+                    <label>Adicionar</label>
+                    <button id="add" class="btn-positive add">Add</button>
+                </div>
+            </div>
+
+            <div id="tableProject" class="wrap-table">            
+                <!-- <table></table> -->
+            </div><!--wrap-table-->    
+            <div class="command-panel">
+                <div class="flexBetween">
+                    <div class="wrap-command">
+                        <label>Excluir Trecho</label>
+                        <button id="delete-trecho" class="btn-negative not-selected">Excluir</button>                    
+                    </div>
+                    <!-- <div class="wrap-command">
+                        <label>Gerar PDF</label>
+                        <button id="generatePDF" class="btn-classic">improvisado</button>                 
+                    </div>                     -->
+                    
+                </div>
+                <div class="flexBetween">
+                    <div class="wrap-command">
+                        <label>Informação do Trecho</label>
+                        <button id="information" class="btn-classic not-selected">Info</button>
+                    </div>
+                    <div class="wrap-command">
+                        <label>Editar Projeto</label>
+                        <button id="edit-project" class="btn-classic not-selected">Atualizar</button>
+                    </div>
+                </div><!--wrap-->    
+            </div>            
+        </div>
+        
+        <div class="footer">
+            <div class="final-panel">
+                <div class="wrap-command">
+                    <label>Informação do Projeto</label>
+                    <button id="project-information" class="btn-classic">Informação</button>
+                </div>
+                <div class="wrap-command">
+                    <label>Salvar Projeto</label>
+                    <button id="save-project" class="btn-positive">Salvar</button>
+                </div>
+            </div><!--final-panel-->
+
+            <footer>
+                <p>Este software foi desenvonvido por Dione Teixeira</p>
+                <p>Todos direitos reservados Ferteix Applications</p>
+            </footer>
+        </div><!--footer-->
+    </div><!--container-->
+
+    <script src="../scripts/mainScript.js"> </script>
+</body>
+</html>

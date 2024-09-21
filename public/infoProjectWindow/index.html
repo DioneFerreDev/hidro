@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/bootStyle.css">  
+    <link rel="stylesheet" href="../styles/ProjectInformation.css">     
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">        
+        <div class="wrap-main">    
+            <label>Peças do Projeto</label>        
+            <div id="wrap-table-pecas" class="wrap-table">
+                <!--Aqui vai a table-->
+            </div><!--wrap-table-pecas-->  
+            
+            <label>Conexões do Projeto</label>
+            <div id="wrap-table-conexoes" class="wrap-table">
+                <!--Aqui vai a table-->
+            </div><!--wrap-table-pecas--> 
+
+            <label>Tubulações do Projeto</label>
+            <div id="wrap-table-plubing" class="wrap-table">
+                <!--Aqui vai a table-->
+            </div><!--wrap-table-pecas--> 
+        </div><!--wrap-main-->
+    </div><!--container-->
+    <div class="final-panel">
+        <button id="pdf" class="btn-classic">Gerar PDF</button>
+        <div style="width:400px;">
+            <input style="padding:3px;font-size:12px;width:300px;outline:none;" id="file-path" type="text"disabled>
+            <button id="choose" class="btn-classic">Escolher</button>
+        </div>
+        <input style="padding:3px;font-size:12px;width:300px;outline:none;" id="file-name" type="text" placeholder="Digite aqui o nome do Arquivo...">
+    </div>
+<script src="../scripts/projectInformation.js"></script>    
+<script src="http://localhost:35729/livereload.js"></script>
+</body>
+</html>

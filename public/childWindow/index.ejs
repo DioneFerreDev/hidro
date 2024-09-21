@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input id="testValue" type="text">
+    <button onClick="actionTeste()">Aceitar</button>
+</body>
+
+<script>
+    const { ipcRenderer } = require('electron');;
+
+    function actionTeste() {
+        let testValue = document.querySelector('#testValue').value;
+
+        ipcRenderer.send('testValue',{test:testValue});
+
+    }
+</script>
+
+</html>

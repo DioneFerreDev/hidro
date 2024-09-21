@@ -1,0 +1,11 @@
+
+.wrap-main{
+    width:100%;
+    text-align:center;
+}
+input[type=text]{
+    width:80%;
+    margin:20px auto;
+    padding:5px;
+    background-color:white;
+}

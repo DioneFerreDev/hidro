@@ -1,0 +1,21 @@
+.wrap-main{
+    width:100%;
+    max-width:1200px;
+    height: vh;
+    margin:0 auto;
+}
+.wrap-table{
+    max-height:250px;
+    margin:30px auto;
+}
+
+.flexBetween .wrap-command:nth-of-type(1){
+    margin-right:10px;
+}
+.flexBetween .wrap-command:nth-of-type(2){
+    margin-left:10px;
+}
+.not-selected{
+    opacity:0.4;
+    cursor:auto;
+}

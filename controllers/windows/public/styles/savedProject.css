@@ -1,0 +1,30 @@
+table tr:nth-of-type(1){        
+    font-size:17px;
+    font-weight: bold;
+    background-color:red !important;
+}
+table tr{
+    font-size:14px !important;
+}
+.wrap-table{
+    height:100%;
+    max-height:400px;
+}
+.final-panel{
+    position:fixed;
+    width:100%;
+    bottom:0;
+}
+.final-panel button.btn-positive{
+    display:none;
+    order:3;
+}
+.final-panel button.btn-negative{
+    display:none;
+    order:2;
+}
+.final-panel input[type="text"]{
+    width:300px;
+    padding:3px;
+    order:1;
+}
