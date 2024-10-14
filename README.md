@@ -12,7 +12,6 @@ Software desenvolvido para ajudar e otimizar projetos hidrosanitários de água 
     <img alt="html5" src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white"/>
     <img alt="css" src="https://img.shields.io/badge/CSS-239120?&style=for-the-badge&logo=css3&logoColor=white"/>
     <img alt="javascript" src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black"/> 
-    <img alt="electron" src="https://img.shields.io/badge/Jest-323330?style=for-the-badge&logo=Electronjs&logoColor=white"/>     
 </div>  
 
 ![ElectronJS]( https://img.shields.io/badge/ELECTRONJS-8A2BE2)
